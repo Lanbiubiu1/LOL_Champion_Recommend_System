@@ -9,12 +9,12 @@
 
 League of Legends, developed by Riot Games, is a globally popular multiplayer online battle arena game. Players compete in teams of five, each controlling a unique champion with distinct abilities, aiming to destroy the enemy's Nexus. The game map includes three lanes and four jungle areas, forming five positions for each team: Top, Jungle, Middle, Bottom, and Support/Utility.
 
-![Champion Selection Page of League of Legends](championSelection.png)
+![Champion Selection Page of League of Legends](./image/championSelection.png)
 *Figure 1: Champion Selection Page of League of Legends*
 
 This project focuses on designing and developing a data processing structure to create a scalable recommendation system to optimize champion selection, utilizing Spark, Pandas, Matlab, the Spark.ML library, and RiotWatcher. The analysis demonstrates positive outcomes, indicating strong potential in this domain.
 
-![Game map indicated with five positions](gamemap.png)
+![Game map indicated with five positions](./image/gamemap.png)
 *Figure 2: Game map with indicated positions*
 
 ---
@@ -48,19 +48,19 @@ The dataset is cleaned to remove redundant information and retain relevant data,
 
 ### Win Rate for Different Positions
 
-![Top 20 champions in Top position with number of wins in 1000 matches](top_count.png)
+![Top 20 champions in Top position with number of wins in 1000 matches](./image/top_count.png)
 *Figure 3: Win counts for the top 20 champions in the Top position*
 
 Win rate is a key metric to evaluate champion effectiveness for a given position. Data analysis reveals that certain champions tend to win more in specific positions.
 
-![Win rate for top champions in different positions](winrate_top.png)
+![Win rate for top champions in different positions](./image/winrate_top.png)
 *Figure 4: Win rate for top champions in different positions*
 
 ### Time Duration as Winning Team
 
 Most games end around the 30-minute mark, highlighting the significance of mid-game strategies. This analysis also identifies compositions effective in late-game scenarios.
 
-![Game duration for different winning team compositions](duration.png)
+![Game duration for different winning team compositions](./image/duration.png)
 *Figure 5: Game duration and winning team compositions at various stages*
 
 ---
@@ -83,7 +83,7 @@ A separate model predicts win rates in the Top lane with an RMSE of 7.7652, demo
 
 A typical user could select their position, view high-win-rate champions, ban specific champions for advantage, and use the model to determine team viability across early, mid, and late game stages.
 
-![Top 2 most banned champions when selecting Smolder](image.png)
+![Top 2 most banned champions when selecting Smolder](./image/image1.png)
 *Figure 6: Top 2 most banned champions when selecting Smolder*
 
 ---
@@ -96,8 +96,8 @@ This project provides a robust data infrastructure and pipeline to assist League
 
 ## References
 
-1. RiotWatcher Library  
-2. Apache Spark MLlib  
-3. Riot Games API Documentation  
-4. Articles by Kenneth Mann and Brendon Kirouac on League of Legends data analysis.
+1. RiotWatcher Library :https://riot-watcher.readthedocs.io/en/latest/riotwatcher/LeagueOfLegends/index.html
+2. Apache Spark MLlib: https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.regression.RandomForestRegressor.html
+3. Riot Games API Documentation  : https://developer.riotgames.com/apis/
+4. Articles by Kenneth Mann and Brendon Kirouac on League of Legends data analysis.: https://medium.com/@brendonkirouac/feature-engineering-for-a-league-of-legends-item-recommender-in-python-49b3079a1903 and https://medium.com/@mannkenn/league-of-legends-data-science-project-42bd0933ddb4
 
